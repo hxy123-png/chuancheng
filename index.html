@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彝绣</title>
+    <link rel="stylesheet" href="../css/one.css">
+	<style>
+		*{
+		    padding: 0;
+		    margin: 0;
+		    box-sizing: border-box;
+		}
+		a{
+		    color: white;
+		    text-decoration: none;
+		}
+		.container{
+		    width: 1200px;
+		    margin: 0 auto;
+		    overflow: hidden; 
+		}
+		body{
+			background-color: beige;
+		}
+		.banner{
+		    width: 3610px;
+		    height: 480px;
+		    animation: switch 8s ease-out infinite;
+		}
+		 @keyframes switch {
+			0%, 25% {
+				margin-left: 0;
+			}
+			35%, 60% {
+				margin-left: -1205px;
+			}
+			70%, 100% {
+				margin-left: -2405px;
+		    }
+		} 
+		.banner img{
+		    width:1200px;
+		    height: 100%;
+		}
+		.header{
+		    height: 150px;
+		    width: 1200px;
+		    background:#669a98;
+		    margin: 0 auto;
+		    text-align: left;
+			font-size: 80px;
+			font-family: "华文行楷";
+			text-shadow: 10px 20px 30px lavenderblush;
+			color: papayawhip;margin-top: 20px;
+		}
+		
+		.nav{
+		    width: 1200px;
+		    height: 30px;
+		    color: white;
+		    font-weight: bold;
+		    background:#669a98;
+		    margin: 0 auto;
+		    display: flex;
+		    justify-content: space-around;
+		    align-items: center;
+		}
+		.nav span:hover,a:hover{
+		    color: tomato ;
+		    transform: scale(1.2);
+		    transition: all 0.5s ;
+		}
+		.zhuti{
+		    width: 1200px;
+		    margin: 0 auto;
+		    height: 450px;
+		    display: flex;
+		    padding: 20px;
+		    background: #fff6ef;
+		    justify-content: space-between;
+		}
+		.left{
+		    width: 20%;
+		}
+		.left1{
+		    width: 100%;
+		}
+		.left1>img{
+		    width: 100%;
+			transition: all 0.5s ease;
+		}
+		.left1 img:hover{
+			border-radius: 50%;
+		}
+		.right{
+		    width:75%;
+		    padding-top: 5px;
+		}
+		h3{
+		    color: #669a98;
+		    margin-bottom: 10px;
+		    font-size: 20px;
+		}
+		.right1{
+		    display: flex;
+		    justify-content: space-between;
+		    border-bottom: 1px dashed #669a98;
+		    padding-bottom: 10px;
+		    margin-top: 0px;
+		}
+		.right1 img{
+			margin-left: 2px;
+			width: 200px;
+			height: 200px;
+			transition: all 0.5s ease;
+		}
+		.right1 img:hover {
+			transform: rotate(360deg);
+		}
+	
+		.tedian{
+		    width: 1200px;
+		    margin: 0 auto;
+		    height: 400px;
+		    display: flex;
+		    padding: 20px;
+		    background: #fff6ef;
+		    justify-content: space-between;
+		}
+		h2{
+			margin: 0 auto;
+			width: 1000px;
+			height: 40px;
+			background: #669a98;
+			text-align: center;
+			line-height: 40px;
+			color: white;
+		}
+		p{
+			margin-top: 10px;
+		}
+		.td img,.td .text{
+			position: absolute;
+			width: 500px;
+			height: 200px;
+			text-align: center;
+		}
+		.td .text{
+			background-color: rgba(0,0,0,0.5);
+			color:white;
+		}
+		.td .text h1{
+			width:200px;
+			margin:50px auto 0;
+			font-size:50px;
+			text-align: center;
+		}
+		.m9,.fan{
+			backface-visibility: hidden;
+			transition: all 0.5s ease-in 0s;
+		}
+		.fan{
+			transform: rotateY(-180deg); 
+		}
+		.td:hover .m9{
+			transform: rotateY(180deg);
+		}
+		.td:hover .fan{
+			transform: rotateY(0deg);   
+		}
+		.zx{
+			position: absolute;
+			width: 500px;
+			height: 200px;			
+			margin-left: 600px;
+			background: url("img/6.webp")no-repeat;
+			overflow:hidden;
+		}
+		.zx h1{
+			position: absolute;
+			left: -600px;
+			top: 0px;
+			width: 400px;
+			height: 300px;
+			line-height: 299px;
+			background: rgba(255, 230, 164, 0.5);
+			text-align: center;
+			font-size:36px;
+			color: #ffffff;
+			transition: all 0.5s;	
+		}
+		.zx:hover h1{
+			position: absolute;
+			left: 0;
+			top:  0;
+		}
+		.footer{
+		    margin: 0 auto;
+		    width: 1200px;
+		    height: 60px;
+		    background: #669a98;
+		    text-align: center;
+		    line-height: 60px;
+		    color: white;
+		}
+		.search{
+			float: right;
+			width: 400px;
+			height: 30px;
+			background-color: #ffffff;
+			margin-left: 50px; 
+			margin-top: 30px;
+		}
+		.search input{
+		    float: left;
+		    width: 350px;
+		    height: 30px;
+		    border: 1px solid #ffffff;
+		    border-right: 0;
+		    color: #bfbfbf;
+		    font-size: 18px;
+		    padding-left: 10px;
+		}
+		.search button{
+		    float: left;
+		    width: 30px;
+		    height: 30px;
+		    border: 0;
+		    background: url(images/btn.png);
+		}
+		.dl {
+			margin-top: 40px;
+			font-size: 20px;
+			font-family: "宋体";
+			margin-left: 20px;
+		}
+		.dl span:hover{
+		    color: tomato ;
+		    transform: scale(1.2);
+		    transition: all 0.5s ;
+		}
+	</style>
+</head>
+
+<body>
+    <div class="header">
+		千年彝绣——绣美楚雄
+		<div class="search">
+		<input type="text" value="输入关键词"></input>
+		<button>
+			<img src="img/搜索.png"/>
+		</button>
+		</div>
+		<br />
+		<div class="dl">
+			<span><a href="denglu.html">登录|注册</a></span>
+		</div>
+	</div>
+    <div class="container">
+    <div class="banner">
+			<img src="img/1.png" alt="1">
+			<img src="img/2.png" alt="2">
+			<img src="img/3.webp" alt="3">
+
+    </div>
+
+    </div>
+    <div class="nav">
+        <span><a href="./index.html">首页</a></span>
+        <span><a href="./jieshao.html">介绍</a></span>
+        <span><a href="./lishi.html">历史</a></span>
+        <span><a href="./yiyi.html">意义</a></span>
+		<span><a href="./zhuye.html">个人主页</a></span>
+    </div>
+    <div class="zhuti">
+        <div class="left">
+            <div class="left1">
+                <img src="img/4.webp">
+            </div>
+			<br /><br />
+            <div class="left1">
+                <img src="img/5.webp">
+            </div>
+        </div>
+        <div class="right">
+            <div class="right1">
+                <div>
+                    <h3>彝绣简介</h3>
+                    <p>
+                        与中国“四大名绣”苏绣、粤绣、湘绣、蜀绣相比，彝绣以红、黄、黑为三大原色，具有技法粗犷、色彩浓烈、集中反映彝族人图腾崇拜、民俗风情等特点。<br />
+                        彝族女子善于刺绣，能否绣出美丽的服饰，以前是衡量彝家女子是否心灵手巧的重要标志。针一线，蕴含着彝家女子对美好生活的追求和向往。<br />
+						色彩主要以黑、白、红、黄、绿、蓝为主。<br />
+						刺绣的纹案主要有:日月、星星、鸡冠、云彩、波浪、牛角、牛眼、铁环、蟹、羊角、窗格、蕨基、穿山门、鸡肠、竹骗、火镰、马牙、彩虹等。
+						刺绣手法变化较多，有垫绣、引绣等。
+                    </p>
+                </div>
+                <div>
+                    <img src="img/7.webp" >
+                </div>
+            </div>
+            <div class="right1">
+                <div>
+                    <h3>彝绣的历史渊源</h3>
+                    <p>
+                        彝族刺绣据考证可以追溯到三国以前，与原始绘画、记事符号、服饰有着密不可分的关系。
+						彝族克智中说:“弹毛擀毡阿约阿先来发明;三色漆器阿火且且来发明;金银饰器俄木阿火来发明;马鞍辔件支格阿龙来发明;
+						铁器金属格莫阿尔来发明;兵法征战滋咪阿基来发明;剪裁缝补金觉乌基来发明;纺线织布濮莫尼衣来发明;改土造田普火惹所来发明;
+						造房建屋布卢惹赤来发明;蒸酒酿酒合罗尼渣来发明;狩猎捕兽吉尼多子来发明。”
+						濮莫尼衣发明的纺线织布，金觉乌基发明了剪裁缝补，彝族刺绣应该是顺着剪裁缝补的产生而产生的。距今最少有1700多年的历史。
+                    </p>
+                </div>
+                <div>
+                    <img src="img/8.webp">
+                </div>
+            </div>
+		</div>
+			
+    </div>
+	<div class="tedian">
+		<div>
+			<h2>彝绣的特点</h2>
+			<p>
+			色彩主要以黑、白、红、黄、绿、蓝为主。彝族刺绣包括服饰、鞋子、包头、围腰、马甲、钱包、枕头、挎包和各种饰品，
+			工艺独特，做工精美，色彩艳丽，寓意深远，具有很高的实用价值、观赏价值和收藏价值。
+			五彩斑斓的服饰显示着彝家精深的刺绣技艺。各种色彩的搭配是要精心安排的，一般都采用茶花红、梅红、紫黑、粉红和大红、绿、黄等颜色，这样，和衣服的底色有鲜明的对比。
+			彝族刺绣的针法变化多端，图案搭配也挺有讲究，在我的家乡，大多采用挑花斜绣。如绣制小围腰，那是最有讲究的，
+			围腰大体上像个“几”字形，头上一般要绣上一朵比较紧密鲜艳的盆花，中部一般要绣一大朵艳丽的富贵花，围腰后面的飘带头尖、面宽，很有特色。
+			</p>
+			<div class="td">
+				<img src="img/9.webp" class="m9"/>
+				<div class="text fan">
+					<h1>彝族服饰</h1>
+				</div>
+				<div class="zx">
+					<h1>时装秀</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="footer">      
+		<font>
+			版权所有
+		<sup>&copy;</sup>
+		20220002173  何晓怡
+		<sub></sub>
+		</font>
+	</div>
+</body>
+</html>
+
+
+

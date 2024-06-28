@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>介绍</title>
+		<style>
+			*{
+			    padding: 0;
+			    margin: 0;
+			    box-sizing: border-box;
+			}
+			a{
+			    color: white;
+			    text-decoration: none;
+			}
+			body{
+				background-color: beige;
+			}
+			.header{
+			    height: 150px;
+			    width: 1200px;
+			    background:#669a98;
+			    margin: 0 auto;
+			    text-align: left;
+				font-size: 80px;
+				font-family: "华文行楷";
+				text-shadow: 10px 20px 30px lavenderblush;
+				color: papayawhip;margin-top: 20px;
+			}
+			
+			.nav{
+			    width: 1200px;
+			    height: 30px;
+			    color: white;
+			    font-weight: bold;
+			    background:#669a98;
+			    margin: 0 auto;
+			    display: flex;
+			    justify-content: space-around;
+			    align-items: center;
+			}
+			.nav span:hover,a:hover{
+			    color: tomato ;
+			    transform: scale(1.2);
+			    transition: all 0.5s ;
+			}
+			.search{
+				float: right;
+				width: 400px;
+				height: 30px;
+				background-color: #ffffff;
+				margin-left: 50px; 
+				margin-top: 30px;
+			}
+			.search input{
+			    float: left;
+			    width: 350px;
+			    height: 30px;
+			    border: 1px solid #ffffff;
+			    border-right: 0;
+			    color: #bfbfbf;
+			    font-size: 18px;
+			    padding-left: 10px;
+			}
+			.search button{
+			    float: left;
+			    width: 30px;
+			    height: 30px;
+			    border: 0;
+			    background: url(images/btn.png);
+			}
+			.dl {
+				margin-top: 40px;
+				font-size: 20px;
+				font-family: "宋体";
+				margin-left: 20px;
+			}
+			.dl span:hover{
+			    color: tomato ;
+			    transform: scale(1.2);
+			    transition: all 0.5s ;
+			}
+			.container{
+			    width: 1200px;
+			    margin: 0 auto;
+			    overflow: hidden; 
+			}
+			.footer{
+			    margin: 0 auto;
+			    width: 1200px;
+			    height: 60px;
+			    background: #669a98;
+			    text-align: center;
+			    line-height: 60px;
+			    color: white;
+				margin-top: 15px;
+			}
+			.zhuti{
+			    width: 1200px;
+			    margin: 0 auto;
+			    height: 900px;
+			    padding: 20px;
+			    background: #fff6ef;
+			    
+			}
+			#jianjie{
+				clear: both;
+				    margin-top: 20px;
+				    background-color: rgb(255, 255, 255);
+				    padding: 15px;
+				    border-color: rgb(75, 99, 153);
+				    border-style: dashed;
+				    border-radius: 10px;
+			}
+			#jianjie img{
+				border-radius: 5%;
+				width: 100px;
+				height: 100px;
+				float: left;
+				margin: 0px 5px 0px 5px;
+				transition: all 0.5s ease;
+			}
+			#jianjie img:hover{
+				border-radius: 50%;
+			}
+			#jianjie p{
+				letter-spacing: 2px;
+				text-indent: 2em;
+				line-height: 1.5em;
+			}
+			h4 a{
+				color: blue;
+				text-decoration: none;
+			}
+			#wenan{
+				clear: both;
+				    margin-top: 20px;
+				    background-color: rgb(255, 255, 255);
+				    padding: 15px;
+				    border-color: rgb(75, 99, 153);
+				    border-style: dashed;
+				    border-radius: 10px;
+			}
+			#wenan img{
+				border-radius: 5%;
+				width: 200px;
+				height: 200px;
+				float: left;
+				margin: 5px 5px 0px 5px;
+				transition: all 0.5s ease;
+			}
+			#wenan img:hover{
+				transform: rotate(360deg);
+			}
+			#wenan p{
+				letter-spacing: 2px;
+				text-indent: 2em;
+				line-height: 1.5em;
+			}
+			#shoufa{
+				clear: both;
+				    margin-top: 20px;
+				    background-color: rgb(255, 255, 255);
+				    padding: 15px;
+				    border-color: rgb(75, 99, 153);
+				    border-style: dashed;
+				    border-radius: 10px;
+			}
+			#shoufa img{
+				transition: all 0.5s ease;
+				width: 200px;
+				height: 200px;
+				float: left;
+				margin: 5px 5px 0px 5px;
+			}
+			#shoufa img:hover{
+				transform: scale(1.2);
+			}
+			#shoufa p{
+				letter-spacing: 2px;
+				text-indent: 2em;
+				line-height: 1.5em;
+			}
+			.js{
+				font-size: 40px;
+				font-family: "方正舒体";
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			千年彝绣——绣美楚雄
+			<div class="search">
+			<input type="text" value="输入关键词"></input>
+			<button>
+				<img src="img/搜索.png"/>
+			</button>
+			</div>
+			<br />
+			<div class="dl">
+				<span><a href="denglu.html">登录|注册</a></span>
+			</div>
+		</div>
+		<div class="container">
+		<hr size="8" color="rgb(255, 255, 255)" align="center" width="100%"/>	
+		</div>
+		
+		<div class="nav">
+		    <span><a href="./index.html">首页</a></span>
+		    <span><a href="./jieshao.html">介绍</a></span>
+		    <span><a href="./lishi.html">历史</a></span>
+		    <span><a href="./yiyi.html">意义</a></span>
+			<span><a href="./zhuye.html">个人主页</a></span>
+		</div>
+		
+		    <div class="zhuti">
+				<div class="js">介绍</div>
+		        <div id="jianjie">
+		            <img src="img/介绍1.webp">
+		            <h4><a name="jianjie">彝绣简介：</a></h4>
+		            <p>
+		            彝绣即彝族刺绣，流传于我国西南彝族地区，种类繁多、丰富多姿、制作精美、异彩纷呈，是彝族传统文化的一种体现，是彝族服饰中不可缺少的部分，是彝族民间艺术中的一颗璀璨明珠尜余習上。
+					彝族刺绣是彝族人民在历史长河中传承先辈文化的一种形式。
+					它有着悠久的历史2008年6月7日，彝族刺绣经国务院批准列入第二批国家级非物质文化遗产名录
+					
+		            </p>
+		        </div>
+				<div id="wenan">
+				    <img src="img/2.png">
+				    <h4><a name="wenan">文案象征：</a></h4>
+				    <p>
+				    在众多的彝族刺绣作品中，有具象图案;也有纯粹的抽象图案。讲究韵律和节奏，色彩淡雅或强烈，充分展示其独树一帜的魅力，
+					内容有文字、符号、图腾、传说、植物、动物等。色彩主要以黑、白、红、黄、绿、蓝为主。
+				    </p>
+					<p>
+					彝族先民认为黑色是大地的象征，是孕育各种动物和植物的母体，属于雌性物质，同时还含有成熟、庄重、威严、主体、主宰之意，也事情和问题的根本;
+					红色和黄色意义有两层:一层是象征红、黄花朵配合成美丽的颜色之意，另一层是体现出热情、豪放、勇敢、精神和带有超度激昂性的颜色;
+					白色是纯洁、善良、轻柔、的代表，与污浊、肮脏、狡诈形成对立;蓝色是指蓝色的天空，认为黑色的大地和蓝色的天空是最早“清”与“浊”两种物质相配后发展起来的一对雌雄统一体物质，
+					她俩相配后又产生了大地上和空中的万物，这无边无际的蓝色还意味着人们心情舒良、广阔与自由之意;
+					草绿色是红色、黄色花朵的母体，指山川、江河和周围生长的草木。不同的纹样用色不同用途也不同，其艺术效果也各异。彝族刺绣一般都是以黑色和天蓝色作底色。
+					刺绣的纹案主要有:日月、星星、鸡冠、云彩、波浪、牛角、牛眼、铁环、蟹、羊角、窗格、蕨基、穿山门、鸡肠、竹骗、火镰、马牙、彩虹等。	
+					</p>
+				</div>
+				<div id="shoufa">
+				    <img src="img/3.webp">
+				    <h4><a name="shoufa">工艺手法：</a></h4>
+				    <p>
+				    彝族的刺绣工艺手法甚多，不受经纬限制，表现力强，适宜于绣花草纹样，多见于坝区的彝族衣饰。
+				    刺绣手法变化较多，有垫绣、引绣。以及缠针、乱针、长短针等。饰品精美细致，质地较松软。可以说，刺绣是彝族富有特色的手工工艺，一般多用于男女上衣、妇女头帕、女裙、男裤、荷包、烟包等。
+					刺绣手法较多，有垫绣，引绣，以及缠针、乱针、长短针等，多以挑、压、镶等工艺结合，根据图案色彩的需要，以红、白、青、绿、蓝、黄等线交替使用，图案纹，饰有较为形象的动物、植物、山水、天象和抽象的各种几何形图纹。
+				    </p>
+					<p>
+					彝族服饰的做花极讲究布局技巧，饰位的选择，一般是按耐用和美观两个标准去决定装饰部位的。
+					属于前一标准的:如衣领、袖口、衣角，鞋舌等;属于后一标准的，如上衣的胸襟、裤筒的中段、围腰头、鞋面等。前者多用补花、锁花，着意加固使之耐磨;
+					后者多用挑花、刺绣，以示美观。其次是分割装饰面，较大的装饰面均分成若干局部，如百裙，因裙长地，穿着时呈现许多直线的褶痕，故常在膝盖以下饰以横向的饰带，造成纵机警相对比的效果及局部的完整耐看。
+					最后是组合设计即骨法，指单独的纹样和连续纹样的组合方法。	
+					</p>
+				</div>
+				</div>
+				<div class="footer">
+				<font>
+				版权所有
+				<sup>&copy;</sup>
+				20220002173  何晓怡
+				<sub></sub>
+				</font>
+				</div>
+	</body>
+</html>

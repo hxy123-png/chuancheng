@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>登录</title>
+	<style>
+		*{
+		    padding: 0;
+		    margin: 0;
+		    box-sizing: border-box;
+		}
+		.dl a{
+		    color: black;
+		    text-decoration: none;
+		}
+		body{
+			background-image: url("img/dl.gif");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			
+		}
+		.header{
+		    height: 150px;
+		    width: 1200px;
+		    margin: 0 auto;
+		    text-align: center;
+			font-size: 80px;
+			font-family: "华文行楷";
+			text-shadow: 10px 20px 30px powderblue;
+			color: lightblue;
+			margin-top: 80px;
+		}
+		.search{
+			float: right;
+			width: 400px;
+			height: 30px;
+			background-color: #ffffff;
+			margin-left: 50px; 
+			margin-top: 30px;
+		}
+		.search input{
+		    float: left;
+		    width: 350px;
+		    height: 30px;
+		    border: 1px solid #ffffff;
+		    border-right: 0;
+		    color: #bfbfbf;
+		    font-size: 18px;
+		    padding-left: 10px;
+		}
+		.search button{
+		    float: left;
+		    width: 30px;
+		    height: 30px;
+		    border: 0;
+		    background: url(images/btn.png);
+		}
+		.dl {
+			margin-right: 900px;
+			margin-top: 40px;
+			font-size: 20px;
+			font-family: "宋体";
+			margin-left: 20px;
+		}
+		.dl span a:hover{
+			border-radius: 50%;
+			color: tomato ;
+			transform: scale(1.2);
+			transition: all 0.5s ;
+		}
+		.footer{
+		    margin: 0 auto;
+		    width: 1200px;
+		    height: 60px;
+		    text-align: center;
+		    line-height: 60px;
+		    color: black;
+			margin-top: 15px;
+			font-size: 25px;
+		}
+		.zhuti{
+		    width: 1200px;
+		    margin: 0 auto;
+		    height: 600px;
+		    padding: 20px;
+		}
+		.register {
+			width: 500px;
+			height: 400px;
+			padding: 40px 65px;
+			margin: 0 auto;
+			border: lightblue solid;
+		}
+		.register h1{
+			width: 357px;
+			height: 50px;
+			line-height: 30px;
+			border-bottom: 2px solid steelblue;
+			font-size: 30px;
+			text-align: center;
+		}
+		.user,.pwd {
+			width: 375px;
+			height: 60px;
+			background: #f9f9f9;
+			padding-left: 15px;
+			margin-top: 5px;
+			font-size: 18px;
+			border-radius: 5px;
+			box-sizing: border-box;
+			margin-left: 0;
+		}
+		.sub{
+			width: 375px;
+			height: 50px;
+			background: lightskyblue;
+			margin-top: 15px;
+			color: #fff;
+			font-size: 19px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	</style>
+	</head>
+	<body>
+		<div class="header">
+			千年彝绣——绣美楚雄
+			<div class="search">
+			<input type="text" value="输入关键词"></input>
+			<button>
+				<img src="img/搜索.png"/>
+			</button>
+			</div>
+			<br />
+			<div class="dl">
+				<span><a href="index.html">返回首页</a></span>
+			</div>
+		</div>
+		<div class="zhuti">
+			<form action="" method= "get" class= "register"  onsubmit= "validate()">
+			<h1>用户登录/注册</h1>
+			<p><input type="text" id="txtID" class= "user" placeholder="用户ID" required="required" />
+			<p><input type="password" id="txtPwd1" class= "pwd" placeholder="密码" required="required"/></p>
+			<p><input type="password" id="txtPwd2" class= "pwd" placeholder="确认密码" required="required"/></p>
+			<p><input type="submit" class="sub" value="登录/注册"/></p>
+			</form>
+			<script>
+				function validate(){
+					var userID= document.getElementById('txtID').value;
+					if(userID.length<6||userID.length > 20){
+						alert("ID必须为6~20个字符，请重新输入!");
+						return false;
+					}
+					var password1= document.getElementById( 'txtPwd1').value;
+					if(password1.length<6||passwordl.length > 10){
+						alert("ID必须为6~10个字符，请重新输入!");
+						return false;
+					}
+					var password2= document.getElementById( 'txtPwd2').value;
+					if(password1!=password2){
+						alert("两次输入密码不一致！");
+						return false;
+					}
+				}
+			</script>
+		</div>
+		<div class="footer">
+		<font>
+		版权所有
+		<sup>&copy;</sup>
+		20220002173  何晓怡
+		<sub></sub>
+		</font>
+		</div>
+	</body>
+</html>
